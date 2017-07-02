@@ -34,6 +34,13 @@ const toggleTodo = id => {
   }
 }
 
+/**
+Action constant for setting visible filter,
+based on link selection in Application Footer
+Returns:
+  type => `SET_VISIBILITY_FILTER`,
+  filter => Filter value i.e `SHOW_ALL`, `SHOW_COMPLETED` or `SHOW_ACTIVE`
+**/
 const setVisibilityFilter = filter => {
   return {
     type: 'SET_VISIBILITY_FILTER',

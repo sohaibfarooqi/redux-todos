@@ -1,6 +1,12 @@
 import React from 'react'
 import FilterLink from '../containers/FilterLink'
 
+/**
+This is Footer component of App.
+It displays options to filter Todos.
+Available options are `SHOW_ALL`, `SHOW_ACTIVE` and `SHOW_COMPLETED`.
+It uses `FilterLink` container to filter link based on selection.
+**/
 const Footer = () => (
   <p>
     Show:

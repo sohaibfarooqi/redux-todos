@@ -5,6 +5,9 @@ import { createStore } from 'redux'
 import todoApp from './reducers'
 import App from './components/App'
 
+/**
+Create store with combineReducer and render App.
+**/
 let store = createStore(todoApp)
 
 render(
