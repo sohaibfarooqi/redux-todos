@@ -11,7 +11,7 @@ onClick will invoke the click-listener passing in todo-id.
 **/
 const TodoList = ({todos, onTodoClick}) => (
   <ul>
-    {todos.map(todo => (<Todo key={todo.id} {...todo} onClick={onTodoClick(todo.id)} />))}
+    {todos.map(todo => (<Todo key={todo.id} {...todo} onClick={()=>onTodoClick(todo.id)} />))}
   </ul>
 )
 
