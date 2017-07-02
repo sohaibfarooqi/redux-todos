@@ -4,7 +4,7 @@ This project is [Sample Application](http://redux.js.org/docs/basics/ExampleTodo
 Though it is a small application, but really nice point to start working with redux together with
 react. It currently uses webpack to run in browser.
 
-#Installation and Running
+# Installation and Running
 
  - `git clone https://github.com/sohaibfarooqi/redux-todos.git`
  - `npm install`
