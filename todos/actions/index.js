@@ -1,11 +1,36 @@
 
+/**
+Acceptable actions on todos.
+**/
+
+//Id for newly added todo.
 let nextTodoId = 0
 
+/**
+Action constant for addTodo. 
+Returns: 
+  type => `ADD_TODO`.
+  id => AutoIncrement field starting from 1.
+  text => Todo text string.
+**/
 const addTodo = text => {
   return {
     type: 'ADD_TODO',
     id: nextTodoId++,
     text
+  }
+}
+
+/**
+Action constant for toggleTodo.
+Returns:
+  type => `TOGGLE_TODO`.
+  id => Id for the todo that has been clicked.
+**/
+const toggleTodo = id => {
+  return {
+    type: 'TOGGLE_TODO',
+    id
   }
 }
 
@@ -16,12 +41,7 @@ const setVisibilityFilter = filter => {
   }
 }
 
-const toggleTodo = id => {
-  return {
-    type: 'TOGGLE_TODO',
-    id
-  }
-}
+
 
 export {
   addTodo,
